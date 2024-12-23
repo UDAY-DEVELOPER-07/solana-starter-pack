@@ -45,6 +45,7 @@ const airdropSol = async (publicKey: PublicKey, amount: number) => {
     const result = await connection.confirmTransaction(signature, "confirmed");
     console.log(`Airdrop successful! Transaction signature: ${signature}`);
     console.log("Transaction confirmation status:", result);
+    console.log(`View transaction on Solana Explorer: https://explorer.solana.com/tx/${signature}?cluster=devnet`);
   } catch (error) {
     console.error("Airdrop failed:", error);
   }
