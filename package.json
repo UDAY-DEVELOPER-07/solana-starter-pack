@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "wallet": "ts-node src/wallet.ts",
+    "airdrop": "ts-node src/airdrop.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
